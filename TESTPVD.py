@@ -11,3 +11,7 @@ age = int(input('Сколько тебе лет?'))git
 name = input("Введи свое имя")
 print (age, name)
 
+print print(
+
+)
+input
