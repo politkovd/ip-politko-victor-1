@@ -7,11 +7,11 @@ print(c)
 #x = input ('enter youre age: ')
 #print (int(x))
 
-age = int(input('Сколько тебе лет?'))git
+age = int(input('Сколько тебе лет?'))
 name = input("Введи свое имя")
 print (age, name)
 
-print print(
+print(
 
 )
 input
