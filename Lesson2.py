@@ -88,12 +88,12 @@
 #     a += 1
 #     print("A")
 
-# a = -1
-# while a < 10:
-#         a += 1
-#         if a == 7 or a % 2 == 0:
-#             continue
-#         print('a--', a)
+a = -1
+while a < 10:
+        a += 1
+        if a == 7 or a % 2 == 0:
+            continue
+        print('a--', a) 
 
 # a = 5
 # while a > 0:
