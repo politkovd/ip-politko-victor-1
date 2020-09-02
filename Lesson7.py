@@ -98,7 +98,8 @@ print(teacher2.get_class_list)
 #         self._class_room = class_room
 #
 #     # @property позволяет обращатся к методу как к атрибуту
-#     # .class_room() --> .class_room
+    #StaticMethod не принимает аргумент self и тем самым говорит что использование данного метода никак
+    # .class_room() --> .class_room
 #     @property
 #     def get_class_room(self):
 #         return self._class_room
