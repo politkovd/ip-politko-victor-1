@@ -92,10 +92,13 @@
 # print(m_dict.keys())
 # print(m_dict.new_method())
 
+
 class Mylist(list):
     def __getitem__(self, offset):
         print('(Indexing % s at % s)' % (self, offset))
+
         return list.__getitem__(self, offset - 1)
+
 x = Mylist('abc')
 print(x)
 print(x[1])
@@ -104,3 +107,4 @@ x.append('spam')
 print(x)
 x.reverse()
 print(x)
+
