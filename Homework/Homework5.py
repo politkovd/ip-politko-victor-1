@@ -129,20 +129,6 @@ with open('text.txt', 'w')  as f:
 d = max((list(found) for l, found in groupby(n)), key=len)
 
 print(d)
-
-# def long_ser(a):
-#     grouped = groupby(a)
-#      sl = [sum(1 for itm in gr_itm[1]) for gr_itm in grouped]
-#     return max(sl)
-
-
-# print(max(enumerate(found), key=lambda enumerated: long_ser(enumerated[1])))
-
-# print(found)
-
-# Не знаю как вывести последовательность
-
-
 # HARD
 
 # Задание-1:
@@ -194,5 +180,3 @@ number = """
 # Программа получает на вход восемь пар чисел,
 # каждое число от 1 до 8 — координаты 8 ферзей.
 # Если ферзи не бьют друг друга, выведите слово NO, иначе выведите YES.
-
-
