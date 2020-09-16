@@ -121,14 +121,16 @@ from itertools import groupby
 
 n = [random.randint(0, 9) for i in range(2500)]
 
-str1 = ''.join(str(i) for i in n) 
+str1 = ''.join(str(i) for i in n)
 
-with open('text.txt', 'w')  as f: 
-     f.write(str(f)) 
-     found = re.findall(r'[0-9]', str1)
-d = max((list(found) for l, found in groupby(n)), key=len)
+with open('text.txt', 'w', encoding='UTF-8')  as f:
+     f.write(str1)
+     found = re.findall(r'\d', str1)
+d = max((list(found) for l, found in groupby(str1)), key=len)
 
 print(d)
+
+
 # HARD
 
 # Задание-1:

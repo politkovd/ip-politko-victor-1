@@ -5,7 +5,7 @@
 # Пример.
 # Исходная программа:
 
-'''import os
+import os
 
 def avg(a, b):
     """Вернуть среднее геометрическое чисел 'a' и 'b'.
@@ -35,7 +35,7 @@ while True:
     except Exception as ex:
         print("Ошибка:", ex)
     else:
-        break'''
+        break
 
 
 # Задача-2:
@@ -45,6 +45,8 @@ while True:
 
 
 import os
+
+
 def creating_dirs(dir_name):
     """
     создание папки в текущей директории
@@ -72,9 +74,10 @@ try:
         i += 1
 except FileExistsError:
     print('Папки уже созданы')
-
     question = input('Хотите удалить папки (Да или Нет)?:')
     if question == 'Да':
+        for i in range(9):
+            name = 'dir_' + str(i + 1)
             deleting_dirs(name)
     elif question == 'Нет':
         pass
@@ -84,6 +87,30 @@ except FileExistsError:
 
 # Задача-3:
 # Напишите скрипт, отображающий папки текущей директории.
+def all_direct(dir_name):
+    dir_path = os.path.join(os.getcwd(), dir_name)
+    os.listdir(dir_path)
+
+print(os.listdir())
 
 # Задача-4:
 # Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
+
+from os import path
+import  shutil
+def main():
+    src = ''
+    if path.exists('Homework1.py'):
+        src = path.realpath("Homework1.py")
+
+    head, tail = path.split(src)
+    print("path" + head)
+    print("file" + tail)
+
+    dst = src.replace('.py', '.json')
+    shutil.copy(src, dst)
+
+
+if __name__ == "__main__":
+    main()
+
