@@ -117,13 +117,28 @@ print('Список с использованием модуля re: \n',line_2_
 # в вышезаполненном файле.
 import random
 import re 
-n = (random.randint(0, 9) for i in range(2500)) 
-str = ''.join(str(i) for i in n) 
- 
-with open('text.txt', 'w', )  as f: 
-    f.write(str) 
-    found = re.findall(r'[0-9]', str)
-    print(found)
+from itertools import groupby
+
+n = [random.randint(0, 9) for i in range(2500)]
+
+str1 = ''.join(str(i) for i in n) 
+
+with open('text.txt', 'w')  as f: 
+     f.write(str(f)) 
+     found = re.findall(r'[0-9]', str1)
+d = max((list(found) for l, found in groupby(n)), key=len)
+
+print(d)
+
+# def long_ser(a):
+#     grouped = groupby(a)
+#      sl = [sum(1 for itm in gr_itm[1]) for gr_itm in grouped]
+#     return max(sl)
+
+
+# print(max(enumerate(found), key=lambda enumerated: long_ser(enumerated[1])))
+
+# print(found)
 
 # Не знаю как вывести последовательность
 
@@ -133,9 +148,9 @@ with open('text.txt', 'w', )  as f:
 # Задание-1:
 # Матрицы в питоне реализуются в виде вложенных списков:
 # Пример. Дано:
-matrix = [[1, 0, 8],
-          [3, 4, 1],
-          [0, 4, 2]]
+# matrix = [[1, 0, 8],
+#           [3, 4, 1],
+#           [0, 4, 2]]
           
 # Выполнить поворот (транспонирование) матрицы
 # Пример. Результат:
@@ -179,3 +194,5 @@ number = """
 # Программа получает на вход восемь пар чисел,
 # каждое число от 1 до 8 — координаты 8 ферзей.
 # Если ферзи не бьют друг друга, выведите слово NO, иначе выведите YES.
+
+

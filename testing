@@ -1,0 +1,26 @@
+# kk = 'wwvwfwgwgwegwegwegweg'
+# print(len(kk))
+
+# s = 'Privet Kak Dela'
+# print(len(s))
+# print('%' in (s))
+# print(s[3:17:3])
+
+# s=s[:7]+'NOVOE'+s[9:]
+# print(s)
+# def funcname(self, parameter_list):
+#     raise NotImplementedError
+
+# l= 'asdasda%safff'%'kakaka'
+# print(l)
+
+# k= 'my name is {}, mne {}'.format('Vitya','27')
+# print(k)
+
+# c = 'hello'
+# print(c.upper())
+# print(c.replace('l','k',1))
+
+
+k = input('Введите свое ФИО: ')
+print((k[0]).upper() + k[1:])
