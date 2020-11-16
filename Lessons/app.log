@@ -1,2 +1,9 @@
 CRITICAL   2020-09-21 21:03:54,904 Can't connect to localhost at port 7777
 CRITICAL   2020-09-21 21:03:54,904 Can't connect to www.python.org at port 80
+CRITICAL   2020-09-21 21:16:35,637 Can't connect to localhost at port 7777
+CRITICAL   2020-09-21 21:16:35,637 Can't connect to www.python.org at port 80
+CRITICAL   2020-09-21 21:16:38,380 Can't connect to localhost at port 7777
+CRITICAL   2020-09-21 21:16:38,380 Can't connect to www.python.org at port 80
+CRITICAL   2020-09-21 21:16:56,889 Can't connect to localhost at port 7777
+CRITICAL   2020-09-21 21:16:56,889 Can't connect to www.python.org at port 80
+ERROR      2020-09-21 21:16:56,890 Can't connect to www.python.org at port 80
