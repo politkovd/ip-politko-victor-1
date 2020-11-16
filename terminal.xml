@@ -1,0 +1,5 @@
+<application>
+  <component name="TerminalOptionsProvider">
+    <option name="myShellPath" value="/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/Python3" />
+  </component>
+</application>
